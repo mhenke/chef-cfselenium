@@ -1,6 +1,6 @@
-# cfselenium Attributes
-default['cfselenium']['install_path'] = "/vagrant/wwwroot"
-default['cfselenium']['owner'] = nil
-default['cfselenium']['group'] = "bin"
-default['cfselenium']['download']['url'] = "https://github.com/bobsilverberg/CFSelenium/archive/master.zip"
-default['cfselenium']['create_apache_alias'] = false
+# CFSelenium Attributes
+default['CFSelenium']['install_path'] = "/vagrant/wwwroot"
+default['CFSelenium']['owner'] = nil
+default['CFSelenium']['group'] = "bin"
+default['CFSelenium']['download']['url'] = "https://github.com/bobsilverberg/CFSelenium/archive/master.zip"
+default['CFSelenium']['create_apache_alias'] = false

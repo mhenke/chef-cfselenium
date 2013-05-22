@@ -1,20 +1,20 @@
 Description
 ===========
 
-Installs the qpscanner.
+Installs the CFSelenium.
 
 Attributes
 ==========
 
-* `node['qpscanner']['install_path']` (Default is /vagrant/wwwroot)
-* `node['qpscanner']['owner']` (Default is `nil` which will result in owner being set to `node['cf10']['installer']['runtimeuser']`)
-* `node['qpscanner']['group']` (Default is bin)
-* `node['qpscanner']['download']['url']` (Default is https://github.com/boughtonp/qpscanner/archive/master.zip)
-* `node['qpscanner']['create_apache_alias']` (Default is false)
+* `node['CFSelenium']['install_path']` (Default is /vagrant/wwwroot)
+* `node['CFSelenium']['owner']` (Default is `nil` which will result in owner being set to `node['cf10']['installer']['runtimeuser']`)
+* `node['CFSelenium']['group']` (Default is bin)
+* `node['CFSelenium']['download']['url']` (Default is https://github.com/boughtonp/CFSelenium/archive/master.zip)
+* `node['CFSelenium']['create_apache_alias']` (Default is false)
 
 Usage
 =====
 
 On ColdFusion server nodes:
 
-    include_recipe "qpscanner"
+    include_recipe "CFSelenium"
