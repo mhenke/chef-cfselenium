@@ -59,13 +59,6 @@ EOH
   not_if { File.directory?("#{node['CFSelenium']['install_path']}/CFSelenium") }
 end
 
-# Set up ColdFusion mapping
-
-execute "start_cf_for_mxunit_default_cf_config" do
-  command "/bin/true"
-  notifies :start, "service[coldfusion]", :immediately
-end
-
 coldfusion10_config "extensions" do
   action :set
   property "mapping"
